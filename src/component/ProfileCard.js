@@ -11,16 +11,16 @@ function ProfileCard({writer}) {
 
   return (
 <div className='card'>
-<div className='cardContent'></div>
+<div className='cardContent'>
 {showBio ? ( 
-   <div className='biorap'>
+   <div className='biowrap'>
    <p className='bio'>{writer.bio}</p>
    </div>
 ):(
    
 <img src= {`images/${writer.avatar}.png`}
 height="300px" width="300px" alt={writer.img}/>
-)}
+)} </div>
 <div className='textGroup'>
 <h3>{writer.name}</h3>
 <p>{writer.email}</p>
