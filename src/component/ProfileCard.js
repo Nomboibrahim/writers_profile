@@ -26,7 +26,7 @@ height="300px" width="300px" alt={writer.img}/>
 <p>{writer.email}</p>
 <p>{writer.phone}</p>
 
-<button className='actionBtn' onClick={()=>hadleClick(writer.bio)}>Read Bio</button>
+<button className='actionBtn' onClick={()=>handleClick(writer.bio)}>Read Bio</button>
 </div>
 </div>
  

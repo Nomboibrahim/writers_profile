@@ -46,13 +46,13 @@ import React, { useState }  from 'react';
       <h1>Writers Profile</h1>
       <div className='container'>
       
-    {list.length === 0 ? (
- <div className='car action'>
+    {writers.list.length === 0 ? (
+ <div className='card action'>
  <p className='infoText'>Oops... no writer profile found</p>
 <button className='actionBtn' onClick={handleClick}>Get Writers</button>
       </div>
     ):(
-list.map((writer) =>(
+writers.list.map((writer) =>(
   <ProfileCard key={writer.id} writer={writer}/>
 ))
     )}
